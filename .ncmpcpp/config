@@ -1,0 +1,87 @@
+% egrep -v '^#' .ncmpcpp/config
+#[MPD settings <3]
+mpd_music_dir = "/home/akuma/Partition/Music/"
+mpd_host = "localhost"
+mpd_port = "6600"
+mouse_list_scroll_whole_page = "yes"
+lines_scrolled = "1"
+
+#[Visualizer Settings]
+visualizer_in_stereo = "no"
+visualizer_fifo_path = "/tmp/mpd.fifo"
+visualizer_output_name = "my_fifo"
+visualizer_sync_interval = "10"
+visualizer_type = "spectrum"
+#visualizer_type = "wave" (spectrum/ellipse)
+#visualizer_look = "⊙⊙"
+#visualizer_look = "▋▋"
+#visualizer_look = "🟊▋"
+#visualizer_look = "▋[]"
+visualizer_look = "●▮"
+#[Header stuffs]
+header_visibility = "yes"
+statusbar_visibility = "yes"
+titles_visibility = "yes"
+
+#[Playlist stuffs]
+message_delay_time = "3"
+playlist_shorten_total_times = "yes"
+playlist_display_mode = "classic"
+browser_display_mode = "columns"
+search_engine_display_mode = "columns"
+playlist_editor_display_mode = "columns"
+autocenter_mode = "yes"
+centered_cursor = "yes"
+user_interface = "alternative"
+follow_now_playing_lyrics = "yes"
+locked_screen_width_part = "60"
+display_bitrate = "no"
+external_editor = "nano"
+
+#main_window_highlight_color = "green"
+progressbar_elapsed_color = "cyan"
+progressbar_color = "black"
+
+
+#[ProgressBar colors]
+#progressbar_look = "=>"
+#progressbar_look ="=|>"
+#progressbar_look = "▃▃▃"
+progressbar_look = "─╼·"
+#progressbar_look = "─⊙ "
+#progressbar_look = "--❱"
+mouse_support = "yes"
+
+#statusbar_color = "white"
+#enable_window_title = "yes"
+
+now_playing_prefix = "$b"
+now_playing_suffix = "$8$/b"
+
+#now_playing_prefix = "$u$2"
+#now_playing_suffix = "$2$/u$2"
+
+song_columns_list_format = "(6)[]{} (23)[red]{a} (26)[yellow]{t|f} (40)[green]{b} (4)[blue]{l}"
+
+# Colors ..
+colors_enabled = "yes"
+empty_tag_color = "yellow"
+statusbar_color = "white"
+state_line_color = "white"
+state_flags_color = "green"
+#main_window_color = "green" 
+header_window_color = "white"
+main_window_highlight_color = "blue"
+color1 = "white"
+color2 = "black"
+
+#song_list_format = " $7%l  $2%t $R$5%a "
+
+#uncomment both statement's below if you want to display the albumart
+
+#execute_on_song_change="~/.ncmpcpp/art.sh"
+#song_list_format = "                       $2%t $R$5%a "
+
+song_status_format = "$b$7♫ $2%a $4⟫$3⟫ $8%t $4⟫$3⟫ $5%b "
+song_window_title_format = " {%a} - {%t}"
+
